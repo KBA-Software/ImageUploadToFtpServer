@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage Title="Picture Upload Demo"
+    NavigationPage.HasNavigationBar="True"
+    xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="DemoApp.MainPage">
+    <StackLayout Padding="20,0,20,0" Margin="0,30,0,0" Orientation="Vertical">
+        <StackLayout Orientation="Horizontal">
+            <Entry Placeholder="Rename here" Text="{Binding ScannedText,Mode=TwoWay}" HorizontalOptions="FillAndExpand" WidthRequest="200" />
+            <Button WidthRequest="100" BackgroundColor="Gray" TextColor="White" Text="Rename" Clicked="Button_Clicked_1" />
+        </StackLayout>
+        <Button BackgroundColor="Gray" TextColor="White" HorizontalOptions="FillAndExpand" Text="Take Photo" Clicked="Button_Clicked" />
+        <Button BackgroundColor="Gray" TextColor="White" HorizontalOptions="FillAndExpand" Text="Delete Photo" x:Name="delete" Clicked="delete_Clicked" />
+        <Button BackgroundColor="Gray" TextColor="White"  x:Name="barcode" HorizontalOptions="FillAndExpand" Clicked="barcode_Clicked" Text="Sscan baarcode"  />
+        <Button BackgroundColor="Gray" TextColor="White" HorizontalOptions="FillAndExpand"  Text="Upload" Clicked="Button_Clicked_2" />
+        <Image x:Name="image" Aspect="AspectFill" HeightRequest="200" WidthRequest="200" />
+
+        
+        
+
+        
+    </StackLayout>
+</ContentPage>
